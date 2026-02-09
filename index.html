@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Her Sister's Corner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero" id="top">
+    <nav class="top-nav">
+      <a class="logo" href="#top">Her Sister's Corner</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links">☰</button>
+      <div id="nav-links" class="nav-links">
+        <a href="#about">About</a>
+        <a href="#event">Her House</a>
+        <a href="#engagement">Year Plan</a>
+        <a href="#contact">Join</a>
+      </div>
+    </nav>
+
+    <section class="hero-content">
+      <p class="eyebrow">Women's fun + empowerment circle</p>
+      <h1>Welcome to <span>Her Sister's Corner</span></h1>
+      <p class="intro">
+        A joyful community where women connect, heal, laugh, and grow together.
+        We are kicking off with our first sleepover experience: <strong>Her House</strong>.
+      </p>
+      <div class="hero-actions">
+        <a class="btn primary" href="https://forms.gle/replace-with-your-registration-link" target="_blank" rel="noopener noreferrer">Register for Her House</a>
+        <button class="btn secondary" id="learn-more">See what to expect</button>
+      </div>
+      <p class="countdown" id="countdown" aria-live="polite"></p>
+    </section>
+  </header>
+
+  <main>
+    <section id="about" class="panel">
+      <h2>What is Her Sister's Corner?</h2>
+      <p>
+        Her Sister's Corner is a safe and vibrant sisterhood where women can plug in for
+        support, mentorship, friendship, and personal development while having fun.
+      </p>
+      <div class="pillars">
+        <article>
+          <h3>Empowerment</h3>
+          <p>Conversations and workshops that build confidence and clarity.</p>
+        </article>
+        <article>
+          <h3>Fun</h3>
+          <p>Playful activities, themed gatherings, and laughter with like-minded women.</p>
+        </article>
+        <article>
+          <h3>Connection</h3>
+          <p>Meaningful bonds, accountability partners, and community care.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="event" class="panel accent">
+      <h2>Launching Event: Her House Sleepover</h2>
+      <p>
+        Her House is our opening sleepover experience — an overnight space for bonding,
+        storytelling, games, guided reflection, and vision-setting.
+      </p>
+      <ul class="feature-list">
+        <li>✨ Interactive circle chats</li>
+        <li>🎲 Games + bonding activities</li>
+        <li>🧘 Wellness and self-care moments</li>
+        <li>📸 Memory corner + photo moments</li>
+      </ul>
+      <a class="btn primary" href="https://forms.gle/replace-with-your-registration-link" target="_blank" rel="noopener noreferrer">Reserve my spot</a>
+    </section>
+
+    <section id="engagement" class="panel">
+      <h2>Continuous Engagement Plan</h2>
+      <p>
+        This is not a one-time event. Her Sister's Corner is a continuous movement.
+        Explore our monthly engagement rhythm below.
+      </p>
+
+      <div class="tabs" role="tablist" aria-label="Engagement timeline">
+        <button role="tab" aria-selected="true" class="tab active" data-target="month-1">Month 1</button>
+        <button role="tab" aria-selected="false" class="tab" data-target="month-2">Month 2</button>
+        <button role="tab" aria-selected="false" class="tab" data-target="month-3">Month 3</button>
+      </div>
+
+      <div class="tab-content active" id="month-1" role="tabpanel">
+        <h3>Connect & Set the Tone</h3>
+        <p>Her House launch, welcome circles, and community onboarding.</p>
+      </div>
+      <div class="tab-content" id="month-2" role="tabpanel">
+        <h3>Grow & Learn</h3>
+        <p>Skill sessions, accountability groups, and confidence-building workshops.</p>
+      </div>
+      <div class="tab-content" id="month-3" role="tabpanel">
+        <h3>Shine & Celebrate</h3>
+        <p>Spotlight stories, sister wins celebration, and planning the next season.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="panel accent">
+      <h2>Stay Plugged In</h2>
+      <p>Join the update list to hear about new meetups, mentorship circles, and next Her House dates.</p>
+      <form class="signup-form" id="signup-form">
+        <label>
+          Name
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+        <button class="btn primary" type="submit">Join the Circle</button>
+      </form>
+      <p id="form-message" class="form-message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Her Sister's Corner • Built for sisterhood and growth.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
